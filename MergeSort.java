@@ -18,14 +18,11 @@ public class MergeSort {
         int m1 = n / 2;
         int m2 = n - m1;
 
-        while (i < m1 && j < m2)
-            t[k++] = (t1[i] < t2[j]) ? t1[i++] : t2[j++];
+        while (i < m1 && j < m2) t[k++] = (t1[i] < t2[j]) ? t1[i++] : t2[j++];
 
-        while (i < m1)
-            t[k++] = t1[i++];
+        while (i < m1) t[k++] = t1[i++];
 
-        while (j < m2)
-            t[k++] = t2[j++];
+        while (j < m2) t[k++] = t2[j++];
     }
 
     public static void triFusion(int[] t, int n) {
@@ -49,8 +46,7 @@ public class MergeSort {
 
         triFusion(t, n);
 
-        for (int i = 0; i < n; i++)
-            System.out.print(t[i] + " ");
+        for (int i = 0; i < n; i++) System.out.print(t[i] + " ");
     }
 
 
