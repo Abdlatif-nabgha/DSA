@@ -15,8 +15,11 @@ public class StackByQueue<T> {
     // Complexity: O(n)
     public void push(T element) {
         // 1. Add the new element to the back of the queue
+        if (queue.isEmpty()) {
+            queue.offer(element);
+            return;
+        }
         queue.offer(element);
-
         // 2. Rotate the queue: Move all elements behind the new one to the back
         // We loop 'size - 1' times because we want to leave the new element at the front.
         int currentSize = queue.size();
