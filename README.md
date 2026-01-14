@@ -92,4 +92,4 @@ Implemented tasks:
 Clone the repository and run the examples or tests provided in each exercise folder.
 
 ```bash
-git clone https://github.com/your-username/data-structures-td.git
+git clone https://github.com/Abdlatif-nabgha/data-structures-td.git
